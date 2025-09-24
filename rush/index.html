@@ -26,13 +26,23 @@
       margin-bottom: 40px;
       color: #fff8;
     }
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
     .card {
-      margin: 20px;
-      max-width: 350px;
+      flex: 1 1 300px; /* ขนาดการ์ดเท่ากัน */
+      max-width: 320px;
       border-radius: 20px;
       background: #fff;
       color: #333;
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
     }
     /* ปุ่ม Gradient */
     .btn-gradient {
@@ -43,6 +53,7 @@
       padding: 12px 20px;
       border-radius: 30px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      width: 100%;
     }
     .btn-gradient:hover {
       transform: scale(1.05);
@@ -56,19 +67,19 @@
     <h1>My Resume Collection</h1>
     <p class="lead">เลือก Resume ที่คุณอยากดู</p>
 
-    <div class="d-flex justify-content-center flex-wrap">
+    <div class="cards-container">
       <!-- Resume 1 -->
-      <div class="card p-3">
+      <div class="card">
         <h5 class="card-title">Resume 1</h5>
         <p class="card-text">นางสาวอาจารีย์ญา ปวีณพงษ์พัฒน์</p>
-        <a href="resume1.html" class="btn btn-gradient d-block w-100">View Resume 1</a>
+        <a href="resume1.html" class="btn btn-gradient">View Resume 1</a>
       </div>
 
       <!-- Resume 2 -->
-      <div class="card p-3">
+      <div class="card">
         <h5 class="card-title">Resume 2</h5>
         <p class="card-text">นางสาวภาณุมาศ บังจันทร์</p>
-        <a href="resume2.html" class="btn btn-gradient d-block w-100">View Resume 2</a>
+        <a href="resume2.html" class="btn btn-gradient">View Resume 2</a>
       </div>
     </div>
   </div>

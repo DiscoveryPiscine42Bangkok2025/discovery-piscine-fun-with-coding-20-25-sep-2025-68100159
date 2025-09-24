@@ -31,9 +31,10 @@
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      align-items: stretch; /* ทำให้สูงเท่ากัน */
     }
     .card {
-      flex: 1 1 300px; /* ขนาดการ์ดเท่ากัน */
+      flex: 1 1 300px;
       max-width: 320px;
       border-radius: 20px;
       background: #fff;
@@ -41,7 +42,7 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-between; /* ปุ่มอยู่ล่างเสมอ */
       padding: 20px;
     }
     /* ปุ่ม Gradient */
@@ -72,14 +73,14 @@
       <div class="card">
         <h5 class="card-title">Resume 1</h5>
         <p class="card-text">นางสาวอาจารีย์ญา ปวีณพงษ์พัฒน์</p>
-        <a href="resume1.html" class="btn btn-gradient">View Resume 1</a>
+        <a href="resume1.html" class="btn btn-gradient mt-auto">View Resume 1</a>
       </div>
 
       <!-- Resume 2 -->
       <div class="card">
         <h5 class="card-title">Resume 2</h5>
         <p class="card-text">นางสาวภาณุมาศ บังจันทร์</p>
-        <a href="resume2.html" class="btn btn-gradient">View Resume 2</a>
+        <a href="resume2.html" class="btn btn-gradient mt-auto">View Resume 2</a>
       </div>
     </div>
   </div>
